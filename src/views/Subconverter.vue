@@ -211,7 +211,7 @@ export default {
           V2Ray: "v2ray",
           Trojan: "trojan",
         },
-        backendOptions: [{ value: "http://192.168.1.88:3666/sub?" }],
+        backendOptions: [{ value: "http://192.168.1.88:3666/sub?" },{ value: "http://192.168.1.88:3667/sub?" }],
         remoteConfig: [
           {
             label: "通用",
