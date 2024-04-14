@@ -211,7 +211,14 @@ export default {
           V2Ray: "v2ray",
           Trojan: "trojan",
         },
-        backendOptions: [{ value: "http://192.168.1.88:3666/sub?" },{ value: "http://192.168.1.88:3667/sub?" }],
+        customBackend: {
+          自己搭建的后端: "http://192.168.1.88:3666",
+          自己搭建的后端备用: "http://192.168.1.88:3667",
+        },
+        backendOptions: [
+          {value: "http://192.168.1.88:3666"},
+          {value: "http://192.168.1.88:3667"},
+        ],
         remoteConfig: [
           {
             label: "通用",
