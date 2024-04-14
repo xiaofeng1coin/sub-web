@@ -211,14 +211,7 @@ export default {
           V2Ray: "v2ray",
           Trojan: "trojan",
         },
-        customBackend: {
-          自己搭建的后端: "http://192.168.1.88:3666",
-          自己搭建的后端备用: "http://192.168.1.88:3667",
-        },
-        backendOptions: [
-          {value: "http://192.168.1.88:3666"},
-          {value: "http://192.168.1.88:3667"},
-        ],
+        backendOptions: [{ value: "http://192.168.1.88:3666/sub?" },{ value: "http://192.168.1.88:3667/sub?" }],
         remoteConfig: [
           {
             label: "通用",
@@ -616,8 +609,8 @@ export default {
       },
       form: {
         sourceSubUrl: "",
-        clientType: "",
-        customBackend: "",
+        clientType: "Clash",
+        customBackend: "http://192.168.1.88:3667/sub?",
         remoteConfig: "",
         excludeRemarks: "",
         includeRemarks: "",
